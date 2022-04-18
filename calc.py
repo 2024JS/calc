@@ -209,7 +209,7 @@ class Ui_MainWindow(object):
     def results(self):
         if not self.is_equal:
             res = eval(self.label_result.text()) #eval высчитывает мат.действие представленное ввиде строки, разбивает строку на действия и цифры
-            self.label_result.setText("Результат: " + str(res) + " кусей за Ольк")
+            self.label_result.setText("Результат: " + str(res))
             self.is_equal = True
         else:
             error = QMessageBox()
